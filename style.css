@@ -118,35 +118,101 @@ body {
   transform: rotate(180deg);
 }
 
+/* Section */
+#planimetriaCarousel {
+  padding: 60px 0;
+  background: #fff; /* keep section clean */
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Marcellus SC', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: #b8860b;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
 /* Planimetria Cards */
 .planimetria-card {
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  background-color: #fafafa;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #10233f; 
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
 .planimetria-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(184, 134, 11, 0.4); /* golden glow */
 }
+
+/* Image */
 .planimetria-card img {
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #b8860b;
 }
+
+/* Card Title */
+.planimetria-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e6c300; 
+  margin-top: 10px;
+}
+
+/* Card Text */
+.planimetria-card .card-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+/* Luxury Button */
 .btn-luxury {
   background-color: #e6c300;
   border: none;
-  color: #111;
+  color: #10233f;
   font-weight: 600;
-  padding: 8px 18px;
+  padding: 8px 22px;
   border-radius: 25px;
   transition: all 0.3s ease;
 }
+
 .btn-luxury:hover {
-  background-color: #d4b000;
-  color: white;
+  background-color: #fff;
+  color: #10233f;
 }
+
+/* Carousel Arrows */
+#planimetriaCarousel .carousel-control-prev-icon,
+#planimetriaCarousel .carousel-control-next-icon {
+  background-color: #10233f;
+  border-radius: 50%;
+  padding: 15px;
+  background-size: 50% 50%;
+  transition: all 0.3s ease;
+}
+
+#planimetriaCarousel .carousel-control-prev-icon:hover,
+#planimetriaCarousel .carousel-control-next-icon:hover {
+  background-color: #b8860b;
+}
+
 
 /* Carousel Arrows */
 .custom-arrow {
