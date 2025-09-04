@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Park Residence</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="#">PREMIUM PARK RESIDENCE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link nav-pill" href="#">KRYE FAQJA</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#kontakti">KONTAKTI</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#">KATALOGU</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#planimetriaCarousel">PLANIMETRIA</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#galleryCarousel">GALERIA</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+<svg class="curly-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMin meet">
+  <path d="M50 0 
+           C 10 150, 200 250, 50 400
+           S 200 600, 50 600"
+        stroke="#d4af37"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"/>
+</svg>
+
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">REHATIA E JETËS TUAJ<br>FILLON KËTU</h1>
+    <div class="hero-buttons">
+      <a href="#planimetriaCarousel" class="btn btn-hero">PLANIMETRIA</a>
+      <a href="#kontakti" class="btn btn-hero">KONTAKTI</a>
+    </div>
+  </div>
+  <img src="img/building1.png" alt="Building" class="hero-img">
+</section>
+
+<hr class="section-separator">
+
+<!-- Information Section -->
+<section class="py-5 fade-section">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">PREMIUM PARK RESIDENCE</h2>
+    <p class="text-center">Azafaol kompania me përvojë shumëvjeçare në ndërtimtari, ndërton një park rezidencial modern me një objekt afarist të integruar...</p>
+    <h4 class="text-center mb-4">Institucionet kryesore nga vendodhja e objektit</h4>
+
+    <div class="row gx-4 justify-content-center">
+      <div class="col-md-5">
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-tree me-3 feature-icon"></i>
+            <span>Pranë parkut të qytetit</span>
+          </li>
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-bank me-3 feature-icon"></i>
+            <span>50 m nga Gjykata Themelore</span>
+          </li>
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-envelope me-3 feature-icon"></i>
+            <span>70 m nga Posta e qytetit</span>
+          </li>
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-building me-3 feature-icon"></i>
+            <span>100 m nga Komuna</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-hospital me-3 feature-icon"></i>
+            <span>100 m nga Spitali Rajonal</span>
+          </li>
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-book me-3 feature-icon"></i>
+            <span>300 m nga Gjimnazi i qytetit</span>
+          </li>
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-geo-alt me-3 feature-icon"></i>
+            <span>Rruga kryesore</span>
+          </li>
+          <li class="d-flex align-items-center mb-4">
+            <i class="bi bi-water me-3 feature-icon"></i>
+            <span>Pranë lumit Vardar</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-separator">
+
+<!-- Gallery -->
+<section class="py-5 fade-section">
+  <div class="container position-relative">
+    <h2 class="text-center mb-5 section-title">GALERIA</h2>
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-12 col-md-4"><img src="img/building1.png" class="d-block w-100 rounded shadow-sm"></div>
+            <div class="col-12 col-md-4"><img src="img/building1.png" class="d-block w-100 rounded shadow-sm"></div>
+            <div class="col-12 col-md-4"><img src="img/building1.png" class="d-block w-100 rounded shadow-sm"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-12 col-md-4"><img src="img/building1.png" class="d-block w-100 rounded shadow-sm"></div>
+            <div class="col-12 col-md-4"><img src="img/building1.png" class="d-block w-100 rounded shadow-sm"></div>
+            <div class="col-12 col-md-4"><img src="img/building1.png" class="d-block w-100 rounded shadow-sm"></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<hr class="section-separator">
+
+<!-- Premium Park Ofron -->
+<section class="py-5 fade-section">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">PREMIUM PARK OFRON</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feature-item border-bottom py-3" data-bs-toggle="collapse" data-bs-target="#feature1">
+          <div class="d-flex justify-content-between">
+            <div><i class="bi bi-bricks me-3 feature-icon"></i><span>Materiale Kualitative</span></div>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div id="feature1" class="collapse mt-2"><p>Përdorim materialesh premium për jetëgjatësi.</p></div>
+        </div>
+        <div class="feature-item border-bottom py-3" data-bs-toggle="collapse" data-bs-target="#feature2">
+          <div class="d-flex justify-content-between">
+            <div><i class="bi bi-house-check me-3 feature-icon"></i><span>Izolim i Mirëfilltë</span></div>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div id="feature2" class="collapse mt-2"><p>Komoditet akustik dhe termik.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-item border-bottom py-3" data-bs-toggle="collapse" data-bs-target="#feature3">
+          <div class="d-flex justify-content-between">
+            <div><i class="bi bi-shield-lock me-3 feature-icon"></i><span>Siguri Maksimale</span></div>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div id="feature3" class="collapse mt-2"><p>Sisteme sigurie moderne.</p></div>
+        </div>
+        <div class="feature-item py-3" data-bs-toggle="collapse" data-bs-target="#feature4">
+          <div class="d-flex justify-content-between">
+            <div><i class="bi bi-tree me-3 feature-icon"></i><span>Gjelbërim</span></div>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div id="feature4" class="collapse mt-2"><p>Hapësira të gjelbra relaksuese.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-separator">
+
+<!-- Planimetria -->
+<section class="py-5 fade-section">
+  <div class="container position-relative">
+    <h2 class="text-center mb-5 section-title">PLANIMETRIA</h2>
+    <div id="planimetriaCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-3">
+            <div class="col-12 col-md-4">
+              <div class="card planimetria-card h-100">
+                <img src="img/ap1.jpg" class="card-img-top"><div class="card-body text-center">
+                  <h5 class="card-title">TIPI 1</h5>
+                  <p class="card-text">90m² apartament 3+1 me parking.</p>
+                  <a href="#" class="btn btn-luxury">SHIKO MË SHUMË</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card planimetria-card h-100">
+                <img src="img/ap1.jpg" class="card-img-top"><div class="card-body text-center">
+                  <h5 class="card-title">TIPI 2</h5>
+                  <p class="card-text">90m² apartament 3+1 me parking.</p>
+                  <a href="#" class="btn btn-luxury">SHIKO MË SHUMË</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card planimetria-card h-100">
+                <img src="img/ap1.jpg" class="card-img-top"><div class="card-body text-center">
+                  <h5 class="card-title">TIPI 3</h5>
+                  <p class="card-text">90m² apartament 3+1 me parking.</p>
+                  <a href="#" class="btn btn-luxury">SHIKO MË SHUMË</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- add more carousel-item slides for more apartments -->
+      </div>
+      <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#planimetriaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#planimetriaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<hr class="section-separator">
+
+<!-- CONTACT SECTION -->
+
+<section id="katalogu" class="katalogu-section fade-section">
+  <div class="container text-center">
+    <div class="divider-top"></div>
+    
+    <h2><i class="fas fa-book-open"></i> Katalogu</h2>
+    <p>Klikoni për të shkarkuar e-katalogun.</p>
+
+    <!-- Catalog Preview -->
+    <img src="azafoullogo-04.png" alt="E-Katalogu" class="catalog-preview">
+
+    <!-- Download Button -->
+    <a href="files/katalogu.pdf" download class="download-btn">
+      <i class="fas fa-download"></i> SHKARKO
+    </a>
+
+    <div class="divider-bottom"></div>
+  </div>
+</section>
+
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section fade-section">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Na Kontaktoni</h2>
+
+        <div class="info-card">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h4>Phone:</h4>
+            <p>+383 44 123 456</p>
+            <p>+383 49 123 456</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>E-Mail:</h4>
+            <p>info@premiumpark.com</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-location"></i>
+          <div>
+            <h4>Lokacioni:</h4>
+            <p>Key Vardar - Gostivar 1230</p>
+          </div>
+        </div>
+
+        <div class="info-hours">
+          <h4>Orari i Punës:</h4>
+          <p><strong>Mon–Fri:</strong> 9:00–19:00 <br>
+             <strong>Sat:</strong> 9:00–16:00 <br>
+             <strong>Sun:</strong> Pushim</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Formulari i Kontaktit</h3>
+        <form id="contactForm" action="sendmail.php" method="POST">
+          <input type="text" name="name" placeholder="Emri juaj" required>
+          <input type="tel" name="phone" placeholder="Telefoni" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Mesazhi juaj" rows="5" required></textarea>
+          <button type="submit">DERGO</button>
+        </form>
+        <p id="formResponse"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <!-- Left side -->
+    <div class="footer-left">
+      <p><strong>Investitori:</strong> Azafaol Centar</p>
+      <p><strong>Kompania Ndërtimore:</strong> Leart Proekt</p>
+      <p><strong>Projektuesi:</strong> Megaplan</p>
+      <p><strong>Nr i lejes:</strong> 20-2706/10</p>
+    </div>
+
+    <!-- Right side -->
+    <div class="footer-right">
+      <h4>Premium Park Residence</h4>
+      <p><i class="fas fa-phone"></i> +383 44 123 456</p>
+      <p><i class="fas fa-envelope"></i> info@premiumpark.com</p>
+      <p class="copyright">© 2025 All rights reserved | A I Designs</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Bootstrap + Custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
