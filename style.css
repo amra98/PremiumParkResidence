@@ -118,116 +118,103 @@ body {
   transform: rotate(180deg);
 }
 
-/* Section */
-#planimetriaCarousel {
-  padding: 60px 0;
-  background: #fff; /* keep section clean */
+
+/* Carousel container */
+.planimetria .carousel {
+  width: 100%;
+  max-width: 1000px;  
+  height: 400px;     
+  margin: 0 auto;
+  overflow: visible;
 }
 
-/* Section Title */
-.section-title {
-  font-family: 'Marcellus SC', serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  position: relative;
-  margin-bottom: 40px;
-  text-align: center;
+/* Inner and items */
+.planimetria .carousel-inner,
+.carousel-item {
+  height: 100%;
 }
 
-.section-title::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 3px;
-  background: #b8860b;
-  margin: 12px auto 0 auto;
+/* Card styling */
+.planimetria .carousel-item .card {
+  background-color: #16202c;  
+  color: #fff;
+  width: 280px;  
+  margin: 0 auto;
   border-radius: 2px;
-}
-
-/* Planimetria Cards */
-.planimetria-card {
-  border: none;
-  border-radius: 14px;
   overflow: hidden;
-  background-color: #10233f; 
-  transition: all 0.3s ease;
-  color: white;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   text-align: center;
 }
 
-.planimetria-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(184, 134, 11, 0.4); /* golden glow */
+/* Card image */
+.planimetria .carousel-item img {
+  width: 80%;
+  height: 180px; 
+  align-items: center;
+  
 }
 
-/* Image */
-.planimetria-card img {
-  border-bottom: 2px solid #b8860b;
-}
-
-/* Card Title */
-.planimetria-card .card-title {
-  font-size: 1.3rem;
+/* Card title */
+.planimetria .carousel-item .card-title {
+  font-size: 18px;
   font-weight: 600;
-  color: #e6c300; 
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-/* Card Text */
-.planimetria-card .card-text {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
+/* Card text */
+.planimetria .carousel-item .card-text {
+  font-size: 14px;
+  color: #ddd; 
+  margin: 8px 16px;
 }
 
-/* Luxury Button */
-.btn-luxury {
-  background-color: #e6c300;
+/* Shiko me shume*/
+.planimetria .carousel-item .btn-luxury {
+  display: inline-block;
+  margin: 16px auto 20px;
+  padding: 10px 22px;
+  background-color: #d4af37; 
+  color: #fff;
   border: none;
-  color: #10233f;
+  border-radius: 30px;
   font-weight: 600;
-  padding: 8px 22px;
-  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
   transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn-luxury:hover {
-  background-color: #fff;
-  color: #10233f;
+.planimetria .carousel-item .btn-shiko:hover {
+  background-color: #d4af37;
 }
 
-/* Carousel Arrows */
-#planimetriaCarousel .carousel-control-prev-icon,
-#planimetriaCarousel .carousel-control-next-icon {
-  background-color: #10233f;
-  border-radius: 50%;
-  padding: 15px;
-  background-size: 50% 50%;
-  transition: all 0.3s ease;
-}
-
-#planimetriaCarousel .carousel-control-prev-icon:hover,
-#planimetriaCarousel .carousel-control-next-icon:hover {
-  background-color: #b8860b;
-}
-
-
-/* Carousel Arrows */
-.custom-arrow {
+/* Prev/Next controls */
+.planimetria .carousel-control-prev,
+.planimetria .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
+  height: auto;
 }
-.carousel-control-prev,
+
+.carousel-control-prev {
+  left: -60px;
+}
+
 .carousel-control-next {
-  width: 5%;
+  right: -60px;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%); /* black arrows */
-  width: 2.5rem;
-  height: 2.5rem;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
 }
+
+
 
 /* Section separator */
 .section-separator {
